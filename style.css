@@ -1,0 +1,57 @@
+.container{
+    background-color: #eee;
+    width: 700px;
+    margin: 20px auto;
+    display:grid; 
+    grid-template-columns: repeat(2,1fr);  
+    grid-template-rows: repeat(2,120px);
+    grid-gap:10px;  
+
+    grid-auto-rows: 80px; 
+    /* for implicit rows 
+    jab hum kam rows define krte hai toh unki size kam ho jayegi as compared to explicit rows
+    { explicit voh hoti hai jo hum define krte hai jaise ki 120px ke 2 row }
+    GRID-AUTO-ROWs lgane ke baad jitne b div add krlo sabki same height ayegi
+    */
+
+    grid-auto-flow: row ;   /* jo column niche aa rhe the ab voh uper ayeinge */
+    grid-auto-columns: 0.5fr; /* implicit ka size 1/2 ho jayeda explicit ke compare m*/
+}
+.item
+{
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.item1{
+    background-color:rgb(255, 212, 132);
+}
+
+.item2{
+    background-color:rgb(124, 235, 255);
+}
+
+.item3{
+    background-color:rgb(224, 124, 255);
+}
+
+.item4{
+    background-color:rgb(123, 240, 133);
+}
+
+.item5{
+    background-color:rgb(255, 121, 121);
+}
+
+.item6{
+    background-color:rgb(252, 255, 52);
+}
+
+.item7{
+    background-color:rgb(55, 146, 182);
+}
+
+.item8{
+    background-color:rgb(255, 121, 255);   
+}
